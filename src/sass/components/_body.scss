@@ -1,0 +1,25 @@
+:root {
+    --primary-text-color: #131313;
+    --secondary-text-color: #FCFCFC;
+    --accent-color: #F8D24E;
+    --primary-bg-color: #84A178;
+    --secondary-bg-color: #FFFFFF;
+    --modal-bg-color: #FCFCFC;
+  }
+  
+  body {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.04em;
+    }
+    
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
