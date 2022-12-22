@@ -1,0 +1,16 @@
+ body {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.04em;
+    }
+    
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
