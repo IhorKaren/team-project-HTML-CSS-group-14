@@ -1,0 +1,42 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  .section-label {
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.22;
+      }
+  
+      @media screen and (min-width: $desctop) {
+        font-size: 30px;
+        line-height: 1.23;
+      }
+        
+    }
+  
+  .section-title {
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+      }
+  
+      @media screen and (min-width: $desctop) {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+      }
+  }

@@ -79,7 +79,7 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
 по адресу указанному в отредактированном свойстве `homepage`. Например, вот
 ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/team-project-iceCream-group-14).
 
 Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
 связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
