@@ -1,0 +1,150 @@
+// .section.about {
+//     background-color: var(--primary-bg-color);
+    
+// }
+
+.about_label {
+    font-weight: 700;
+    color: var(--secondary-text-color);
+
+    @media screen and (max-width:480px) {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.about_title { 
+    margin: 12px 60px 32px;   
+    font-family: 'Seymour One';
+    
+    color: var(--secondary-text-color);
+}
+
+
+.about_thumb {
+    position: relative;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    width: 279px;
+    height: 278px; 
+    margin-bottom: 40px;   
+
+    // @media screen and (min-width: 768px) {
+    //     position: absolute;
+    // }
+}
+
+.about_image {
+    position: absolute;
+    display: block;
+    margin-top: 26px;
+    height: 100%;
+    width: 100%;
+
+
+    // background-color: #fff;
+    background-image: url(../images/about/cow-s@1x.jpg);
+    border-radius: 50%;
+    background-position: 50% 50%;
+    
+    
+}
+
+.about_text {
+    margin: 0 30px;
+    text-align: center;
+    
+    font-size: 12px;
+    line-height: 1.62;
+    color: var(--secondary-text-color);
+
+    margin-bottom: 5px;
+}
+
+.about_list {
+    @extend %list;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin: 0 44px;        
+    }
+}
+
+.about_button {
+    // @extend %button-read
+    background-color: var(--accent-color);
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    &:hover,
+    &:focus {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        color: var(--secondary-text-color);
+    }
+}
+
+.about-button_icon {
+    margin-left: 4px;
+
+    .about_button:focus & {
+        fill: var(--secondary-text-color);
+    }
+
+}
+
+.about-item {
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 80px;
+        }
+
+        
+    }
+}
+
+.about-item_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 16px;
+}
+
+.about-item_title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;    
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.about-item_text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.70;
+    text-align: center;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.74;
+
+    }
+}
