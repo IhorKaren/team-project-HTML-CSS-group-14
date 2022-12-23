@@ -74,12 +74,22 @@
   align-items: center;
   margin-top: 22px;
   margin-bottom: 40px;
+  z-index: 123;
+  position: relative;
+}
+.product-image__ice {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  z-index: 13232;
 }
 .product-image__background {
   background-color: var(--primary-bg-color);
   width: 132px;
   height: 132px;
   border-radius: 50%;
+  position: absolute;
+  top: 7px;
 }
 .product-info {
   @extend %list;
@@ -99,11 +109,13 @@
 .product-info__rectangle {
   border: 2px solid#9CBE8F;
   width: 53px;
+  height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding-bottom: 8px;
 
   border-radius: 40px;
 }
@@ -121,7 +133,7 @@
 }
 .product-info__description {
   font-size: 10px;
-  line-height: 12px;
+  line-height: calc(12px / 10px);
   color: #131313;
 }
 .procuct-info__circle-descriprtion {
@@ -203,8 +215,6 @@
     color: #ffffff;
   }
 }
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
 .open-modal {
   padding: 20px;
