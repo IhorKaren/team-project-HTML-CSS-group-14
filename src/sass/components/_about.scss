@@ -2,6 +2,9 @@
 //     background-color: var(--primary-bg-color);
     
 // }
+p {
+    margin: 0;
+}
 
 .about_label {
     font-weight: 700;
@@ -18,21 +21,39 @@
     font-family: 'Seymour One';
     
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 72px;
+    }
 }
 
+.about_container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }    
+}
 
 .about_thumb {
-    position: relative;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 50%;
+    position: relative;    
+    
     width: 279px;
     height: 278px; 
-    margin-bottom: 40px;   
+    margin-bottom: 40px; 
+    margin-right: auto;
+    margin-left: auto;  
 
-    // @media screen and (min-width: 768px) {
-    //     position: absolute;
-    // }
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    // border-radius: 50%;
+
+    @media screen and (min-width: $tablet) {
+        width: 330px;
+        height: 330px;
+        margin-bottom: 60px;
+        margin-right: 38px;
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    }
 }
 
 .about_image {
@@ -41,14 +62,16 @@
     margin-top: 26px;
     height: 100%;
     width: 100%;
-
-
-    // background-color: #fff;
+    
     background-image: url(../images/about/cow-s@1x.jpg);
     border-radius: 50%;
     background-position: 50% 50%;
-    
-    
+
+    @media screen and (min-width: $tablet) {
+        background-image: url(../images/about/cow-m@1x.jpg);
+        width: 330px;
+        height: 330px;
+    }   
 }
 
 .about_text {
