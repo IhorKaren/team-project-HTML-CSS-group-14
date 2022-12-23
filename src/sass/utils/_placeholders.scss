@@ -4,6 +4,109 @@
     list-style: none;
   }
 
+  %button-default {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 26px 11px 26px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.21;
+
+    @media screen and (min-width: $desctop) {
+      padding: 12px 34px 12px 34px;
+
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+
+  %button-read {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 34px 12px 34px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  %button-row {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.21;
+    text-decoration: underline;
+
+    @media screen and (min-width: $desctop) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
+
+  %button-large {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 40px 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  %button-transparent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 55px 12px 55px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  %button-buy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 36px 12px 36px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+
 %visually-hidden {
     position: absolute;
     white-space: nowrap;
