@@ -63,11 +63,13 @@
     display: none;
     
     @media screen and (min-width: $tablet) {
-        display: flex;
 
+        color: var(--primary-text-color);
+        background: var(--accent-color);
+
+        display: flex;
         width: 152px;
         height: 42px;
-        background: var(--accent-color);
         border-radius: 10px;
         border: none;
         justify-content: center;
@@ -76,7 +78,8 @@
         font-weight: 600;
         font-size: 14px;
         line-height: calc(17 / 14);
-        color: var(--primary-text-color);
+        cursor: pointer;
+        
     }
 }
 
@@ -85,3 +88,79 @@
     display: none;   
     }
 }
+
+.mobile-menu-box {
+    position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary-bg-color);
+
+        @media screen and (min-width:$desctop) {
+           display: none; 
+        }
+}
+
+.mobile-logo {
+    width: 40px;
+    height: 37px;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.mobile-menu-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: auto;
+    border: none;
+    background-color:transparent;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.mobile__navigation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 122px;
+           
+}
+
+.navigation__link {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    color: var(--modal-bg-color);
+    text-decoration: none;
+
+    &:focus {
+        color: var(--primary-text-color);
+    }
+}
+
+.mobile-order{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 64px;
+    }
+
+    .mob-order {
+        width: 152px;
+            height: 42px;
+            background: var(--accent-color);
+            border-radius: 10px;
+            border: none;
+            justify-content: center;
+            align-items: center;
+        
+            font-weight: 600;
+            font-size: 14px;
+            line-height: calc(17 / 14);
+            color: var(--primary-text-color);
+    }
