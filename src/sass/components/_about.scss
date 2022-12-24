@@ -1,0 +1,179 @@
+.about_label {
+    font-weight: 700;
+    color: var(--secondary-text-color);
+
+    @media screen and (max-width:480px) {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.about_title { 
+    margin: 12px 60px 32px;   
+    font-family: 'Seymour One';
+    
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 72px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 82px;
+    }
+}
+
+.about_container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+    }    
+}
+
+.about_thumb {
+    position: relative;    
+    
+    width: 279px;
+    height: 278px; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 62px; 
+
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+
+    @media screen and (min-width: $tablet) {
+        // position: absolute;
+        width: 330px;
+        height: 330px;        
+        margin-right: 38px;
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: 490px;
+        height: 490px;
+        margin-left: 0;
+        margin-right: 109px;
+    }
+}
+
+.about_image {
+    position: absolute;
+    display: block;
+    top: 7%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-image: url(../images/about/cow-s@1x.jpg);
+    border-radius: 50%;
+    background-position: 50% 50%;
+
+    @media screen and (min-width: $tablet) {
+        background-image: url(../images/about/cow-m@1x.jpg);
+    }   
+
+    @media screen and (min-width: $desctop) {
+        background-image: url(../images/about/cow-l@1x.jpg);
+        top: 8%;
+    }
+}
+
+.about_content {
+    margin-right: 30px;
+    margin-left: 30px;
+    
+
+    @media screen and (min-width: $tablet) {        
+        position: relative;
+        margin-top: 8px;
+        margin-right: 0;
+        margin-left: 0;        
+        width: 336px;
+        text-align: start;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-top: 90px;
+        margin-right: 101px;
+        width: 463px;
+    }
+}
+
+.about_list {
+    @extend %list;
+    @media screen and (max-width: 767px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.about_text {    
+    text-align: center;  
+    
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--secondary-text-color);
+
+    @media screen and (max-width: $mobile) {
+        margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        line-height: 1.76;
+        &:nth-child(-n + 2)  {
+            margin-bottom: 8px;
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        font-size: 14px;
+        line-height: 1.93;
+    }
+}
+
+.about_visually-hidden {  
+    // line-height: 1.93;  
+    @media screen and (max-width: 767px) {
+        display: none;;
+    }         
+}
+
+.about_button {
+    @extend %button-read;
+    transition: background-color 250ms var(--timing-function);
+    background-color: var(--accent-color);
+    border: none;
+    margin-top: 5px;
+    &:hover,
+    &:focus {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        color: var(--secondary-text-color);
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        left: 0;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+}
+
+.about-button_icon {
+    margin-left: 4px;
+
+    .about_button:focus & {
+        fill: var(--secondary-text-color);
+    }
+
+}
+
