@@ -10,49 +10,65 @@
     }
 }
 
-.titel-hide{
+.advantages-container{
+    width: 320px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding-left: 76px;
+        padding-right: 76px;
+      }
+  
+      @media screen and (min-width: $desctop) {
+        width: $desctop;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+}
+
+.title-hide{
     @extend %visually-hidden;
 }
 
-.container-add{
-    @media screen and (min-width: $tablet) {
-        height: 100%;
-    } 
-    @media screen and (min-width: $desctop) {
-        height: 100%;
-    }
-}
-
-.advantages-columns{
-    width: 320px;
-    padding-left: 45px;
-    padding-right: 45px;
-    margin: auto;
+.advantages-list{
+    width: 230px;
     display: block;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
     @media screen and (min-width: $tablet) {
         width: $tablet;
         display: flex;
-        padding-left: 76px;
-        padding-right: 76px;
         gap: 80px;
     }
     @media screen and (min-width: $desctop) {
         width: $desctop;
-        padding-left: 16px;
-        padding-right: 16px;
         gap: 32px;
     }
 }
 
-.advantages-block{
-    width: 100%;
+.advantages-list__iteam{
+    width: 230px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: $tablet) {
+        &:not(:last-child){
+            margin-bottom: 28px;
+        }
+    }
     @media screen and (min-width: $tablet) {
         width: 152px;
     }
@@ -60,6 +76,8 @@
         width: 368px;
     }
 }
+
+
 
 .advantages-cow::before{
     @extend %advantages-icon;
@@ -91,7 +109,7 @@
     }
 }
 
-.advantages-block__titel{
+.advantages-list__title{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -115,7 +133,7 @@
     }
 }
 
-.advantages-block__par{
+.advantages-list__par{
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -127,6 +145,7 @@
     margin-bottom: 0;
     width: 230px;
     @media screen and (min-width: $tablet) {
+        font-weight: 400;
         width: 152px;
         font-size: 14px;
         line-height: 1.7142;
@@ -137,3 +156,4 @@
         line-height: 1.75;
     }
 }
+
