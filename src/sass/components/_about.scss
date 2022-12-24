@@ -1,7 +1,3 @@
-// p {
-//     margin: 0;
-// }
-
 .about_label {
     font-weight: 700;
     color: var(--secondary-text-color);
@@ -30,7 +26,6 @@
 .about_container {
     @media screen and (min-width: $tablet) {
         display: flex;
-        // justify-content: flex-start;
         align-items: flex-start;
         position: relative;
     }    
@@ -110,6 +105,10 @@
 
 .about_list {
     @extend %list;
+    @media screen and (max-width: 767px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .about_text {    
@@ -147,6 +146,8 @@
 }
 
 .about_button {
+    @extend %button-read;
+    transition: background-color 250ms var(--timing-function);
     background-color: var(--accent-color);
     border: none;
     margin-top: 5px;
