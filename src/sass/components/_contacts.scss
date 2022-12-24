@@ -1,5 +1,5 @@
 
-.contacts__lists{
+.contacts__lists {
 display: flex;
 gap: 16px;
 flex-direction: column;
@@ -7,6 +7,7 @@ align-items: center;
 margin: 0;
 padding: 0;
 margin-bottom: 20px;
+justify-content: center;
 @media screen and (min-width:768px) {
 flex-direction: row;
 margin-bottom: 40px;
@@ -34,7 +35,7 @@ gap: 48px;
 flex-direction: column;
 flex-basis: calc((100% - 32px) / 3);
 padding: 40px 32px 24px 32px;
-width: 280px;
+max-width: 280px;
 height: 412px;
 background-color: var(--secondary-text-color);
 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -42,13 +43,13 @@ border-radius: 24px;
 list-style: none;
 @media screen and (min-width:768px) {
 gap: 64px;
-width: 224px;
+max-width: 224px;
 height: 537px;
 padding: 40px 24px;
 }
 @media screen and (min-width:1200px) {
 padding: 40px;
-width: 368px;
+max-width: 368px;
 height: 542px;
 flex-basis: calc((100% - 64px) / 3);
 }
@@ -169,7 +170,7 @@ font-size: 14px;
 
 }
 .contacts__block{
-  flex-grow: 1;
+  font-style:inherit;
 }
 
 .contacts__block:not(:last-child)::after {
@@ -203,6 +204,7 @@ font-size: 14px;
 }
 
 .contacts__address{
+font-style:inherit;
 display: block;
 font-weight: 500;
 font-size: 12px;
