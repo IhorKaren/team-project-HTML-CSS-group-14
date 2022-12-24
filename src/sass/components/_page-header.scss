@@ -46,6 +46,10 @@
     color: var(--secondary-text-color);
     text-decoration: none;
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -84,15 +88,20 @@
 }
 
 .mobile-button {
+    display: block;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        
     @media screen and (min-width: $desctop) {
     display: none;   
     }
 }
 
-.mobile-menu-box {
+.mobile-menu {
     position: fixed;
         top: 0;
-        z-index: 1;
         width: 100vw;
         height: 100vh;
         background-color: var(--primary-bg-color);
@@ -131,17 +140,26 @@
            
 }
 
+.navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .navigation__link {
     font-weight: 700;
-    font-size: 48px;
-    line-height: calc(59 / 48);
+    font-size: 32px;
+    line-height: calc(39 / 32);
     color: var(--modal-bg-color);
     text-decoration: none;
 
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
     &:focus {
         color: var(--primary-text-color);
     }
 }
+
 
 .mobile-order{
     display: flex;
@@ -150,7 +168,7 @@
     margin-bottom: 64px;
     }
 
-    .mob-order {
+.mob-order {
         width: 152px;
             height: 42px;
             background: var(--accent-color);
@@ -163,4 +181,8 @@
             font-size: 14px;
             line-height: calc(17 / 14);
             color: var(--primary-text-color);
-    }
+
+            @media screen and (min-width: $tablet){
+            display: none
+              }
+}
