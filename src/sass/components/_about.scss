@@ -68,7 +68,8 @@
 .about_image {
     position: absolute;
     display: block;
-    margin-top: 26px;
+    top: 7%;
+    left: 0;
     height: 100%;
     width: 100%;
     
@@ -82,14 +83,14 @@
 
     @media screen and (min-width: $desctop) {
         background-image: url(../images/about/cow-l@1x.jpg);
-        margin-top: 39px;
+        top: 8%;
     }
 }
 
 .about_content {
     margin-right: 30px;
     margin-left: 30px;
-    // text-align: center;
+    
 
     @media screen and (min-width: $tablet) {        
         position: relative;
@@ -97,6 +98,7 @@
         margin-right: 0;
         margin-left: 0;        
         width: 336px;
+        text-align: start;
     }
 
     @media screen and (min-width: $desctop) {
@@ -104,6 +106,10 @@
         margin-right: 101px;
         width: 463px;
     }
+}
+
+.about_list {
+    @extend %list;
 }
 
 .about_text {    
