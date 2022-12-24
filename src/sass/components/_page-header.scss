@@ -54,6 +54,8 @@
     line-height: calc(20 / 16);
     color: var(--secondary-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 13px;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -118,13 +120,18 @@
         @media screen and (min-width:$desctop) {
            display: none; 
         }
-}
+    }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    transition: 0.5s;
+    transform: translateX(100%);
 }
+
+.is-active{
+    transition: 0.5s;
+    transform: translateX(0%);
+}
+
 
 .mobile-logo {
     width: 40px;
