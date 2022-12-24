@@ -1,7 +1,7 @@
 <section class="container customers">
     <div class="slider" id="slider">
-  <div class="swiper-slide">
-    <div class="swiper-slide__avatar">
+  <div class="mySlides fade">
+   <div class="swiper-slide__avatar">
       <picture>
         <source srcset="./images/clients/client-1@1x.jpg 1x, ./images/clients/client-1@2x.jpg 2x" type="image/jpeg" />
         <img src="./images/clients/client-1@1x.jpg" class="swiper-slide__pic" alt="avatar">
@@ -16,8 +16,10 @@
     </div>
     <span class="swiper-slide__text">Emily, Los Angeles</span>
     </div>
-    <div class="swiper-slide">
-    <div class="swiper-slide__avatar">
+  </div>
+
+ <div class="mySlides fade">
+   <div class="swiper-slide__avatar">
       <picture>
         <source srcset="./images/clients/client-2@1x.jpg 1x, ./images/clients/client-2@2x.jpg 2x" type="image/jpeg" />
         <img src="./images/clients/client-2@1x.jpg" class="swiper-slide__pic" alt="avatar">
@@ -30,8 +32,9 @@
     </div>
     <span class="swiper-slide__text">Bryan, New-York</span>
     </div>
-    <div class="swiper-slide">
-    <div class="swiper-slide__avatar">
+
+  <div class="mySlides fade">
+   <div class="swiper-slide__avatar">
       <picture>
         <source srcset="./images/clients/client-3@1x.jpg 1x, ./images/clients/client-3@2x.jpg 2x" type="image/jpeg" />
         <img src="./images/clients/client-3@1x.jpg" class="swiper-slide__pic" alt="avatar">
@@ -45,13 +48,12 @@
     <span class="swiper-slide__text">Diana, Chicago</span>
     </div>
     </div>
-<div class="slider-dots">
-  <div class="slider-dots__item active" data-index="1">
   </div>
-  <div class="slider-dots__item" data-index="2">
-  </div>
-  <div class="slider-dots__item" data-index="3">
-  </div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 </div>
 </section>
 

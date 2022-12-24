@@ -1,55 +1,19 @@
-// главный слайдер
-const slider = document.querySelector('#slider')
-const sliderItems = Array.from(slider.children);
+let slideIndex = 0;
+showSlides();
 
-
-sliderItems.forEach(function (slide, index) {
-    console.log(slide);
-
-    
-// скрыла все слайды, кроме первого
-    if (index !== 0) {
-        slide.classList.add('hidden')
-    }
-
-// добавила индексы
-    slide.dataset.index = index;
-
-// клик по слайдам
-     slide.addEventListener('click', function () {
-       
-        // скрыла текущий слайд
-        slide.classList.add('hidden');
-       
-        // рассчитала индекс след слайда
-         let nextSladeIndex;
-         if (index + 1 === sliderItems.length) {
-             nextSladeIndex = 0;
-         } else {
-             nextSladeIndex = index + 1
-         }
-        
-        //  нашла след слайд
-        const nextSlide = slider.querySelector(`[data-index="${nextSladeIndex}"]`);
-
-        // отобразила след слайд
-         nextSlide.classList.remove('hidden');
-         
-     })
-
-});
-
-$('.slider-dots').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
-});
-
-$('.slider-dots .slider-dots__item').click(function() {
-  var $this = $(this);
-  $('.slider-dots').slick('slickGoTo', $this.data('index'))
-});
-
-
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
