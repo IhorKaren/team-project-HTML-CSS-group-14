@@ -1,3 +1,7 @@
+.gallery__title {
+    @extend %visually-hidden;
+}
+
 @keyframes myanimation {
     0% {
         opacity: 0;
