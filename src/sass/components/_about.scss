@@ -1,10 +1,6 @@
-// .section.about {
-//     background-color: var(--primary-bg-color);
-    
+// p {
+//     margin: 0;
 // }
-p {
-    margin: 0;
-}
 
 .about_label {
     font-weight: 700;
@@ -25,12 +21,18 @@ p {
     @media screen and (min-width: $tablet) {
         margin-bottom: 72px;
     }
+
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 82px;
+    }
 }
 
 .about_container {
     @media screen and (min-width: $tablet) {
         display: flex;
-        align-items: center;
+        // justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
     }    
 }
 
@@ -39,20 +41,27 @@ p {
     
     width: 279px;
     height: 278px; 
-    margin-bottom: 40px; 
     margin-right: auto;
-    margin-left: auto;  
+    margin-left: auto; 
+    margin-bottom: 62px; 
 
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    // border-radius: 50%;
+    border-radius: 50%;
 
     @media screen and (min-width: $tablet) {
+        // position: absolute;
         width: 330px;
-        height: 330px;
-        margin-bottom: 60px;
+        height: 330px;        
         margin-right: 38px;
         box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: 490px;
+        height: 490px;
+        margin-left: 0;
+        margin-right: 109px;
     }
 }
 
@@ -69,36 +78,72 @@ p {
 
     @media screen and (min-width: $tablet) {
         background-image: url(../images/about/cow-m@1x.jpg);
-        width: 330px;
-        height: 330px;
     }   
-}
 
-.about_text {
-    margin: 0 30px;
-    text-align: center;
-    
-    font-size: 12px;
-    line-height: 1.62;
-    color: var(--secondary-text-color);
-
-    margin-bottom: 5px;
-}
-
-.about_list {
-    @extend %list;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin: 0 44px;        
+    @media screen and (min-width: $desctop) {
+        background-image: url(../images/about/cow-l@1x.jpg);
+        margin-top: 39px;
     }
 }
 
+.about_content {
+    margin-right: 30px;
+    margin-left: 30px;
+    // text-align: center;
+
+    @media screen and (min-width: $tablet) {        
+        position: relative;
+        margin-top: 8px;
+        margin-right: 0;
+        margin-left: 0;        
+        width: 336px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-top: 90px;
+        margin-right: 101px;
+        width: 463px;
+    }
+}
+
+.about_text {    
+    text-align: center;  
+    
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--secondary-text-color);
+
+    @media screen and (max-width: $mobile) {
+        margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        line-height: 1.76;
+        &:nth-child(-n + 2)  {
+            margin-bottom: 8px;
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        font-size: 14px;
+        line-height: 1.93;
+    }
+}
+
+.about_visually-hidden {  
+    // line-height: 1.93;  
+    @media screen and (max-width: 767px) {
+        display: none;;
+    }         
+}
+
 .about_button {
-    // @extend %button-read
     background-color: var(--accent-color);
     border: none;
     margin-top: 5px;
-    margin-bottom: 50px;
     &:hover,
     &:focus {
         background-color: #0A8817;
@@ -106,6 +151,13 @@ p {
 
     &:focus {
         color: var(--secondary-text-color);
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        left: 0;
+        margin-top: 32px;
+        margin-bottom: 0;
     }
 }
 
@@ -118,56 +170,3 @@ p {
 
 }
 
-.about-item {
-    &:not(:last-child) {
-        margin-bottom: 28px;
-    }
-
-    @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-            margin-right: 80px;
-        }
-
-        
-    }
-}
-
-.about-item_icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-
-    margin-bottom: 16px;
-}
-
-.about-item_title {
-    margin-bottom: 12px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(44 / 36);
-    text-align: center;    
-    text-transform: uppercase;
-
-    color: var(--secondary-text-color);
-}
-
-.about-item_text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.70;
-    text-align: center;
-    color: var(--secondary-text-color);
-
-    @media screen and (min-width: 768px) {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.74;
-
-    }
-}
