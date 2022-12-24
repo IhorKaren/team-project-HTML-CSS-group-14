@@ -1,0 +1,64 @@
+@keyframes myanimation {
+    0% {
+        opacity: 0;
+    }
+
+    11.11% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    44.44% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gallery {
+    position: relative;
+}
+
+
+.gallery img {
+    position: absolute;
+    height: 130px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: myanimation;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    background-color: inherit;
+    border-radius: 24px;
+
+    @media screen and (min-width: $tablet) {
+        width: 704px; 
+        height: 327px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: 1013px;
+        height: 422px;
+    }
+}
+
+
+.gallery img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gallery img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.gallery img:nth-child(3) {
+    animation-delay: 6s;
+}
+
