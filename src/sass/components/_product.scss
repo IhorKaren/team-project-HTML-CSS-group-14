@@ -1,7 +1,7 @@
 .product {
   background-position-x: -610px;
   background-position-y: -180px;
-  background-repeat: repeat-y;
+  
   background-size: cover;    
   height: 100%;
   width: 100%;
@@ -90,9 +90,11 @@
   }
 .product-gallery{      
   @extend %list;
-  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (min-width:768px) {
-    display: flex;
+    flex-direction: row;
     gap: 16px;
   }
   @media screen and (min-width:1200px) {
@@ -130,6 +132,7 @@
   height: 200px;
   border-radius: 50%;
   position: relative;
+  z-index: 30;
   left: 50%;
   transform: translate(-50%);
     
@@ -223,7 +226,8 @@
 }
 
   .product-gallery__box {
-  padding-top: 123px;
+  position: relative;
+    padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -298,12 +302,15 @@
   background-color: transparent;
   color: #131313;
   padding: 0;
+  bottom: 16px;
   cursor: pointer;
   left: 50%;
   margin-bottom: 0;
   transform: translate(-50%);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+  @media screen and (min-width:1200px) {    
+    bottom: 60px;
+  }   
   &:hover,
   &:focus {  
     color: #0A8817;
