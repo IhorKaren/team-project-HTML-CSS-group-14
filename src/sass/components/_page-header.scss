@@ -1,0 +1,225 @@
+.header {
+    background-color: transparent;
+    
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+//     margin-top: 12px;
+
+//     @media screen and (min-width: $tablet) {
+//         margin-top: 20px;
+//     }
+
+//     @media screen and (min-width: $desctop) {
+//         margin-top: 8px;
+//     }
+// }
+
+.logo {
+    width: 40px;
+    height: auto;
+
+    @media screen and (min-width: $tablet) {
+            width: 48px;
+            }
+
+    @media screen and (min-width: $desctop) {
+              width: 60px;
+             }
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu {
+    display: none;
+    margin-left: 308px;
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        gap: 28px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menu__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 13px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 40px;
+    }
+}
+
+.tablet-button {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) { 
+    .order {
+        display: none;
+    }
+}
+
+.order {    
+
+        color: var(--primary-text-color);
+        background: var(--accent-color);
+
+        display: flex;
+        width: 152px;
+        height: 42px;
+        border-radius: 10px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(17 / 14);
+        cursor: pointer;   
+}
+
+.mobile-button {
+    display: block;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        
+    @media screen and (min-width: $desctop) {
+    display: none;   
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+        z-index: 200;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary-bg-color);
+
+        @media screen and (min-width:$desctop) {
+           display: none; 
+        }
+    }
+
+.is-hidden {
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+
+.is-active{
+    transition: 0.5s;
+    transform: translateX(0%);
+}
+
+
+.mobile-logo {
+    width: 40px;
+    height: 37px;
+    margin-left: 20px;
+    margin-top: 12px;
+
+    @media screen and (min-width: $tablet) {
+        width: 48px;
+        height: 44px;
+        margin-left: 32px;
+        margin-top: 20px;
+    }
+}
+
+.mobile-menu-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: auto;
+    border: none;
+    background-color:transparent;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.mobile__navigation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 122px;
+           
+}
+
+.navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.navigation__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    color: var(--modal-bg-color);
+    text-decoration: none;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
+    &:focus {
+        color: var(--primary-text-color);
+    }
+}
+
+
+.mobile-order{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 64px;
+    }
+
+.mob-order {
+        width: 152px;
+            height: 42px;
+            background: var(--accent-color);
+            border-radius: 10px;
+            border: none;
+            justify-content: center;
+            align-items: center;
+        
+            font-weight: 600;
+            font-size: 14px;
+            line-height: calc(17 / 14);
+            color: var(--primary-text-color);
+
+            @media screen and (min-width: $tablet){
+            display: none
+              }
+}

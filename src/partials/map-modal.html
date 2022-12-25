@@ -1,0 +1,34 @@
+
+<div class="map-modal modal" data-modal="map">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="map-modal__cross js-modal-close"
+    width="30"
+    height="30"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+
+  <h1 class="map-modal__title">Our Locations</h1>
+  <div class="map-modal__tocenter">
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20320.567045220247!2d30.491642322954117!3d50.45840476851884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5106812c5d%3A0x221af60403878fa9!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4!5e0!3m2!1sru!2sua!4v1671805217811!5m2!1sru!2sua"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <button class="map-modal__btn">
+      <a class="map-modal__link"
+        href="https://www.google.com.ua/maps/place/%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD+%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/@50.4584048,30.4916423,14z/data=!4m5!3m4!1s0x40d4ce5106812c5d:0x221af60403878fa9!8m2!3d50.4481226!4d30.5250038?hl=ru"
+      > Open map</a>
+    </button>
+  </div>
+</div>
+
+<div class="map-overlay js-overlay-modal"></div>
