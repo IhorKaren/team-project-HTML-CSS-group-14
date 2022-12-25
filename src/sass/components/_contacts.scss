@@ -221,6 +221,7 @@ line-height: 150%;
 
 .contacts-btn__large {
 @extend %button-large;
+
 background-color: #F8D24E;
 border: none;
 transition: background-color 250ms var(--timing-function);
@@ -251,6 +252,8 @@ flex-direction: row;
 .contacts-btn__transparent {
 @extend %button-transparent;
 border: 2px solid #F8D24E;
+width: 196px;
+height: 42px;
 transition: border-color 250ms var(--timing-function);
 &:hover{
 border-color: #0A8817;
