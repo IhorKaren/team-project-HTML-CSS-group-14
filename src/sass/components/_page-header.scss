@@ -1,22 +1,27 @@
 .header {
     background-color: transparent;
+    padding-top: 12px;
+
+    @media screen and (min-width: $tablet) {
+            padding-top: 20px;
+            }
+    @media screen and (min-width: $desctop) {
+              padding-top: 40px;
+             }
     
 }
 .header__container {
+    position: relative;
     display: flex;
     align-items: center;
-    margin-top: 12px ;
-    @media screen and (min-width: $tablet) {
-        margin-top: 20px;
-    }
-    @media screen and (min-width: $desctop) {
-        margin-top: 8px;
-    }
 }
 .logo {
+    position: absolute;
     width: 40px;
     height: auto;
-    z-index: 1;
+    top: -10;
+    left: 0;
+    z-index: 201;
 
     @media screen and (min-width: $tablet) {
             width: 48px;
@@ -114,19 +119,19 @@
 }
 
 
-.mobile-logo {
-    width: 40px;
-    height: 37px;
-    margin-left: 20px;
-    margin-top: 12px;
+// .mobile-logo {
+//     width: 40px;
+//     height: 37px;
+//     margin-left: 20px;
+//     margin-top: 12px;
 
-    @media screen and (min-width: $tablet) {
-        width: 48px;
-        height: 44px;
-        margin-left: 32px;
-        margin-top: 20px;
-    }
-}
+//     @media screen and (min-width: $tablet) {
+//         width: 48px;
+//         height: 44px;
+//         margin-left: 32px;
+//         margin-top: 20px;
+//     }
+// }
 
 .mobile-menu-button {
     display: block;
