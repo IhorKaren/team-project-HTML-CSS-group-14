@@ -41,12 +41,16 @@
         <p class="contacts__time">06:00 AM - 10:00 PM</p>
         <span class="contacts__type">Saturday - Sunday</span>
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
-        </div>
+      </div>
 
-        <address class="contacts__block">
-        <a class="contacts__address" href="tel:+610383766284">+61(0) 383 766 284</a>
-        <a class="contacts__address" href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </address>
+      <address class="contacts__block">
+        <a class="contacts__address" href="tel:+610383766284"
+          >+61(0) 383 766 284</a
+        >
+        <a class="contacts__address" href="mailto:noreply@envato.com"
+          >noreply@envato.com</a
+        >
+      </address>
     </li>
     <li class="contacts__list">
       <div class="contacts__block">
@@ -73,23 +77,27 @@
         >
       </address>
     </li>
-    </ul>
-    <div class="contacts__btn">
-      <button
-       class=" contacts-btn__large large "
-        type="button">
-        Our Locations
-        <svg class=" contacts__icon" width="12" height="12">
-          <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
-        </svg>
-      </button>
-      <button 
-      class=" contacts-btn__transparent transparent"
-       type="button">
-       Franchise
-        <svg  class=" contacts__icon" width="12" height="12">
-         <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
-       </svg>
-      </button>
-      </div>
+  </ul>
+  <div class="contacts__btn">
+    <button
+      class="contacts-btn__large large js-open-modal"
+      data-modal="map"
+      type="button"
+    >
+      Our Locations
+      <svg class="contacts__icon" width="12" height="12">
+        <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
+      </svg>
+    </button>
+    <button
+      class="contacts-btn__transparent transparent"
+      data-modal-open
+      type="button"
+    >
+      Franchise
+      <svg class="contacts__icon" width="12" height="12">
+        <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </section>
