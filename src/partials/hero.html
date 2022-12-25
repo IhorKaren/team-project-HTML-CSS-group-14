@@ -1,39 +1,82 @@
-<div class="section">
+<div class="section hero">
   <div class="container">
     <h1 class="hero-section__title">ice cream made with passion</h1>
-    <ul class="hero-section__list">
-      <li class="hero-section__item">
-        <button class="hero-section__button">
-          <a href="" class="hero-section__button-link">Products</a>
-        </button>
-      </li>
-      <li class="hero-section__item">
-        <a href="#" class="hero-section__link">How it’s made?</a>
-      </li>
-    </ul>
-    <picture>
-      <source
-        srcset="
-          /src/images/header/ice-cream-l@1x.jpg 1x,
-          /src/images/header/ice-cream-l@2x.jpg 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          /src/images/header/ice-cream-m@1x.jpg 1x,
-          /src/images/header/ice-cream-m@2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          /src/images/header/ice-cream-s@1x.jpg 1x,
-          /src/images/header/ice-cream-s@2x.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img src="/src/images/header/ice-cream-l@1x.jpg" alt="морозиво" />
-    </picture>
+    <div class="hero-section__between">
+      <ul class="hero-section__list">
+        <li class="hero-section__item">
+          <button class="hero-section__button">
+            <a href="" class="hero-section__button-link">Products</a>
+          </button>
+        </li>
+        <li class="hero-section__item">
+          <button class="hero-section__secondbtn">How it’s made?</button>
+        </li>
+      </ul>
+      <div class="test1">
+        <span class="number">16</span>
+        <span>cafes</span>
+        <span class="number">23</span>
+        <span>food trucks</span>
+      </div>
+
+      <picture class="hero-section__picture">
+        <source
+          srcset="
+            /src/images/header/ice-cream-l@1x.jpg 1x,
+            /src/images/header/ice-cream-l@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/header/ice-cream-m@1x.jpg 1x,
+            /src/images/header/ice-cream-m@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/header/ice-cream-s@1x.jpg 1x,
+            /src/images/header/ice-cream-s@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="/src/images/header/ice-cream-l@1x.jpg" alt="морозиво" />
+      </picture>
+    </div>
+
+    <div class="hero-section__content">
+      <picture class="hero-section__plate">
+        <source
+          srcset="
+            /src/images/header/ice-plate-m@x1.jpg 1x,
+            /src/images/header/ice-plate-m@x2.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/header/ice-plate-s@1x.jpg 1x,
+            /src/images/header/ice-plate-s@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="/src/images/header/ice-plate-m@x1.jpg" alt="морозиво" />
+        
+      </picture>
+      <div class="hero-section__text">
+        <p class="hero-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et</p>
+          
+
+          <button type="button" class="hero-section__arrow">
+                                <svg class="hero-arrow" width="40px" height="16px" >
+                                    <use href="./images/sprite.svg#icon-arrow"></use>
+                               </svg>
+        </p>
+      </div>
+          
+       
+    </div>
   </div>
 </div>

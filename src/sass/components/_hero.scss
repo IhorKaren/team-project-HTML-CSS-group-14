@@ -1,8 +1,111 @@
+.hero {
+  background-image: url(/src/images/header/dots-s@1x.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 236px;
+  padding-top: 14px;
+  @media screen and (min-width: $tablet) {
+    background-image: url(/src/images/header/dots-m@1x.png);
+  }
+  @media screen and(min-width:$tablet) {
+    padding-bottom: 60px;
+  }
+}
 .hero-section__title {
   font-family: 'Seymour One';
   font-style: normal;
-  font-weight: 400;
   font-size: 26px;
-  line-height: 33px;
+  line-height: calc(33px / 26px);
   letter-spacing: 0.04em;
+  color: #fcfcfc;
+  width: 247px;
+  text-transform: uppercase;
+}
+.hero-section__list {
+  @extend %list;
+  display: flex;
+  gap: 12px;
+}
+
+.hero-section__button {
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  @extend %button-default;
+  height: 38px;
+  width: 109px;
+}
+.hero-section__button-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+  padding: 11px 26px;
+}
+.hero-section__secondbtn {
+  color: #f8d24e;
+  @extend %button-row;
+}
+.hero-section__picture {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-45%);
+  @media screen and (min-width: $tablet) {
+    left: 65%;
+  }
+}
+.hero-section__between {
+  display: flex;
+  justify-content: space-between;
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 42px;
+  }
+}
+.test1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 28px;
+}
+.number {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34px / 28px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #131313;
+}
+
+.hero-arrow {
+  fill: #fcfcfc;
+}
+.hero-section__arrow {
+  background-color: transparent;
+  border: none;
+}
+.hero-section__text {
+  width: 200px;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: #fcfcfc;
+}
+.hero-section__paragraph {
+  padding-bottom: 20px;
+}
+
+.hero-section__content {
+  display: none;
+
+  @media screen and(min-width:$tablet) {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+  }
 }
