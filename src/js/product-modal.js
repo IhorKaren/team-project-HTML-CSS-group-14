@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
          var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.product-modal[data-modal="' + modalId + '"]');
+             modalElem = document.querySelector('.franchise-modal[data-modal="' + modalId + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
     });
+
 
 
 
