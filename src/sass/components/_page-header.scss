@@ -20,6 +20,7 @@
 .logo {
     width: 40px;
     height: auto;
+    z-index: 1;
 
     @media screen and (min-width: $tablet) {
             width: 48px;
@@ -130,21 +131,6 @@
 .is-active{
     transition: 0.5s;
     transform: translateX(0%);
-}
-
-
-.mobile-logo {
-    width: 40px;
-    height: 37px;
-    margin-left: 20px;
-    margin-top: 12px;
-
-    @media screen and (min-width: $tablet) {
-        width: 48px;
-        height: 44px;
-        margin-left: 32px;
-        margin-top: 20px;
-    }
 }
 
 .mobile-menu-button {
