@@ -1,13 +1,13 @@
 footer {
     width: 100%;
     height: 100%;
-    background: #84A178;
+    background: var(--primary-bg-color);
     margin: 0;
 }
 
 .footer {
     width: 100%;
-    background-color: #84A178;
+    background-color: var(--primary-bg-color);
 }
 
 /*
@@ -49,7 +49,7 @@ footer {
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
-        color: #FCFCFC;
+        color: var(--secondary-text-color);
     }
 
     @media screen and (min-width: 768px) {
@@ -78,7 +78,7 @@ footer {
         font-size: 34px;
         line-height: 41px;
         letter-spacing: 0.04em;
-        color: #FCFCFC;
+        color: var(--secondary-text-color);
         margin-top: 0;
     }
 
@@ -145,7 +145,7 @@ footer {
 
 
     .footer__icon {
-        fill: #84A178;
+        fill: var(--primary-bg-color);
         ;
         transition-property: fill;
         transition-duration: 250ms;
@@ -156,8 +156,9 @@ footer {
 
     .footer__link:hover .footer__icon,
     .footer__link:focus .footer__icon {
-        fill: #FCFCFC;
+        fill: var(--modal-bg-color);
     }
+    
     @media screen and (min-width: 320px) {
     .footer__tel {
         font-weight: 700;
@@ -195,7 +196,7 @@ footer {
         font-weight: 700;
         font-size: 12px;
         line-height: 186%;
-        color: #FCFCFC;
+        color: var(--secondary-text-color);
         text-decoration: none;
         outline: none;
     }
