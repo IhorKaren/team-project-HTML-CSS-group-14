@@ -1,13 +1,20 @@
 .customers {
-  padding-top: 80px;
+  position: relative;
+  min-height: 1038px;
+  padding-top: 178px;
+  padding-bottom: 390px;
+  
   background-image: url(../images/background/bcg-s@1x.jpg);
-  min-width: 100%;
-  min-height: 100%;
+  
   @media screen and (min-width: $tablet) {
-    padding-top: 100px;
+    min-height: 1018px;
+    padding-top: 283px;
+    padding-bottom: 480px;
   }
    @media screen and (min-width: $desctop) {
-    padding-top: 140px;
+    min-height: 1054px;
+    padding-top: 464px;
+    padding-bottom: 228px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -43,6 +50,40 @@
     }
   }
 }
+
+.customers__title {
+  @extend %visually-hidden;
+}
+
+.gallery {
+  position: absolute;
+  top: -32;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 280px;  
+
+  @media screen and (min-width: $tablet) {
+      top: -144;
+      width: 704px; 
+  }
+
+  @media screen and (min-width: $desctop) {
+    top: -98;
+    width: 1013px; 
+  }
+}
+
+.gallery__picture {
+  display: inline-block;
+}
+
+.gallery__photo {
+  border-radius: 8px;
+  margin: 0;
+}
+
+
 .mySlides {
   display: none;
 }
@@ -65,6 +106,9 @@
   }
 }
 .swiper-slide__wrapper {
+  display: flex;
+  align-items: center;
+
   background-color: var(--primary-bg-color);
   border-radius: 10px;
   text-align: center;
@@ -72,14 +116,24 @@
   margin-left: auto;
   margin-right: auto;
 
+  width: 280px;
+  height: 256px;
+
   @media screen and (min-width: $tablet) {
     border-radius: 24px;
+    width: 705px;
+    height: 138px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 968px;
+    height: 138px;
   }
   
 }
 .swiper-slide__comment {
   margin: 0;
-  padding: 35px 39px;
+  padding: 0 39px;
   font-size: 12px;
   line-height: 2.6;
   color: var(--secondary-text-color);
@@ -88,11 +142,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
-    padding: 28px 80px 29px 80px;
+    padding: 0 80px;
   }
   @media screen and (min-width: $desctop) {
     font-size: 16px;
-    padding: 43px 109px;
+    padding: 0 109px;
   }
 }
 .swiper-slide__text {
