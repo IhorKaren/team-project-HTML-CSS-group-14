@@ -21,13 +21,14 @@
     height: auto;
     top: -10;
     left: 0;
-    z-index: 201;
+    z-index: 16;
 
     @media screen and (min-width: $tablet) {
             width: 48px;
             }
     @media screen and (min-width: $desctop) {
               width: 60px;
+              top: -23;
              }
 }
 .list {
