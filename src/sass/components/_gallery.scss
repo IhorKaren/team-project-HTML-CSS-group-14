@@ -1,9 +1,11 @@
+.hidden {
+    display: none;
+}
 .gallery__title {
     @extend %visually-hidden;
 }
-
-
 .gallery img {
+    position: relative;
     left: 0;
     right: 0;
     margin: auto;
@@ -18,5 +20,8 @@
         width: 1013px;
     }
 }
+
+
+
 
 

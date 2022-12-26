@@ -1,4 +1,5 @@
-import'./js/burger'
+import './js/burger'
+import './js/gallery'
 import './js/slider'
 import'./js/product-modal'
 import'./js/map-modal'
