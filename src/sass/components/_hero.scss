@@ -61,6 +61,7 @@
 }
 .hero-section__button-link {
   font-weight: 600;
+  text-decoration: none;
   font-size: 12px;
   line-height: 15px;
   color: #000000;
@@ -72,8 +73,12 @@
     padding: 11px 34px;
   }
 }
-.hero-section__secondbtn {
+
+.hero-section__link {
   color: #f8d24e;
+}
+
+.hero-section__secondbtn {
   @extend %button-row;
 }
 .hero-section__picture {
@@ -174,8 +179,9 @@
 
 .hero-section__paragraph {
   
-  @media screen and (min-width:$desctop) {
-    padding-top: 10px;
+  @media screen and (min-width:$tablet) {
+    padding-top: 20px;
+    margin-bottom: 20px;
     
   }
 }
