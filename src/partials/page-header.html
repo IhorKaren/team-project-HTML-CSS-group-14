@@ -1,0 +1,71 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="logo">
+      <img src="./images/company-logo.png" alt="логотип компанії" />
+    </div>
+    <nav class="navigation header__navigation">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link" href="">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="tablet-button">
+      <button data-menu-open class="mobile-button">
+        <svg class="" width="32" height="32">
+          <use href="./images/sprite.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <button type="button" class="order js-open-modal" data-modal="main-modal">
+        Buy now
+        <svg class="button-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu is-hidden" data-menu>
+  <div class="container">
+    <div class="mobile-menu-box">
+      <button type="button" class="mobile-menu-button" data-menu-close>
+        <svg class="mobile-menu-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile__navigation">
+        <ul class="navigation__menu list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">How it's made?</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Our products</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-order">
+        <button type="button" class="mob-order js-open-modal" data-modal="main-modal">
+          Buy now
+          <svg class="button-icon" width="12" height="12">
+            <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<!-- ------Oksana Pelekhata-------- -->
+<!-- --------main-modal----------- -->
+<!-- До кнопки, яка відкриває модальне вікно, потрібно додати data-modal-open -->
+
+    
+
+
+<!-- Несколько модальных окон -->
+
+<div class="main-modal modal" data-modal="main-modal">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="main-modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <p class="modal-title">Buy now</p>
+            <form>
+                <div class="main-modal-position">
+                <div class="checkbox-wrap">
+                <input type="checkbox" name="product" id="ice-cream" value="ice-cream" class="main-modal__check visually-hidden" />
+                <label for="ice-cream" class="main-modal__check-text">
+                    <div class="main-modal__product-overlay main-modal__product-overlay__ice-cream">
+                        <div class="main-modal__product-photo main-modal__product-photo__ice-cream">
+                            <div class="main-modal__product main-modal__product__ice-cream">
+                            <picture>
+                                <source srcset="./images/modal/product-1@1x.jpg 1x, ./images/modal/product-1@2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="main-modal__picture" src="./images/modal/product-1@1x.jpg" width="132" alt="ice-cream">
+                            </picture>
+                            </div>
+                        </div>
+                            <p class="main-modal__product-text">ice cream</p>
+                    </div>
+                </label>
+                </div>
+
+                <div class="checkbox-wrap">
+                <input type="checkbox" name="product" id="ice-coffee" value="ice-cofee" class="main-modal__check visually-hidden" />
+                <label for="ice-coffee" class="main-modal__check-text">
+                    <div class="main-modal__product-overlay main-modal__product-overlay__ice-cofee">
+                        <div class="main-modal__product-photo main-modal__product-photo__ice-cofee">
+                            <div class="main-modal__product main-modal__product__ice-cofee">
+                                <picture>
+                                    <source srcset="./images/modal/product-2@1x.jpg 1x, ./images/modal/product-2@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img class="main-modal__picture" src="./images/modal/product-2@1x.jpg" width="132" alt="ice-cofee">
+                                </picture>
+                            </div>
+                        </div>
+                        <p class="main-modal__product-text">ice coffee</p>
+                    </div>
+                    </label>
+                </div>
+
+                <div class="checkbox-wrap">
+                <input type="checkbox" name="product" id="milkshake" value="milkshake" class="main-modal__check visually-hidden" />
+                <label for="milkshake" class="main-modal__check-text">
+                    <div class="main-modal__product-overlay main-modal__product-overlay__milkshake">
+                        <div class="main-modal__product-photo main-modal__product-photo__milkshake">
+                            <div class="main-modal__product main-modal__product__milkshake">
+                                <picture>
+                                    <source srcset="./images/modal/product-3@1x.jpg 1x, ./images/modal/product-3@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img class="main-modal__picture" src="./images/modal/product-3@1x.jpg" width="132" alt="milkshake">
+                                </picture>
+                            </div>
+                        </div>
+                            <p class="main-modal__product-text">milkshake</p>
+                    </div>
+                </label>
+                </div>
+                </div>
+                <div class="main-modal__field">
+                    <input type="text" name="user-name" class="main-modal__input" id="user-name" placeholder="Name" required>
+                    <label for="user-name" class="main-modal__input-label"></label>
+                </div>
+                <div class="main-modal__field">
+                    <label for="user-tel" class="main-modal__input-label"></label>
+                    <input type="tel" name="user-tel" class="main-modal__input" id="user-tel" placeholder="Phone" required>
+
+                </div>
+                <div class="main-modal__field">
+                    <label for="user-comments" class="main-modal__input-label"></label>
+                    <textarea name="user-comments" id="user-comments" class="main-modal__input main-modal__input-textarea"
+                        placeholder="Comment"></textarea>
+                </div>
+                <button type="submit" class="main-modal-form__btn">Submit</button>
+            </form>
+
+
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="main-overlay js-overlay-modal"></div>
+           
+
