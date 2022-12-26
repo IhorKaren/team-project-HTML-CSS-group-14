@@ -1,3 +1,6 @@
+.hero-section__container{
+  position: relative;
+}
 .hero {
   background-image: url(/src/images/header/dots-s@1x.png);
   background-position: bottom;
@@ -7,12 +10,11 @@
   padding-top: 14px;
   @media screen and (min-width: $tablet) {
     background-image: url(/src/images/header/dots-m@1x.png);
+    padding-bottom:12px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(/src/images/header/dots-l@1x.png);
-  }
-  @media screen and(min-width:$tablet) {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 }
 .hero-section__title {
@@ -76,14 +78,22 @@
 }
 .hero-section__picture {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-45%);
+  left: 53%;
+  bottom: -236;
+  width: 177px;
+
+  transform: translateX(-50%);
   @media screen and (min-width: $tablet) {
     left: 65%;
+    bottom:-12px;
+    width: 268px;
   }
-  @media screen and (min-width: $tablet) {
-    left: 73%;
+  @media screen and (min-width: $desctop) {
+    left: 72%;
+     bottom: -64;
+     width: 456px;
+     
+    
   }
 }
 .hero-section__between {
@@ -163,7 +173,11 @@
 }
 
 .hero-section__paragraph {
-  padding-bottom: 20px;
+  
+  @media screen and (min-width:$desctop) {
+    padding-top: 10px;
+    
+  }
 }
 
 .hero-section__content {
@@ -173,5 +187,6 @@
     align-items: center;
     display: flex;
     gap: 16px;
+    
   }
 }
