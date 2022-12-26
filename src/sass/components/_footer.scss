@@ -215,7 +215,7 @@ footer {
         }
     }
 
-    .footer__rights::before {
+    .footer__right::before {
         border: 1px solid #E1E1E1;
     }
     .footer__rights {
@@ -227,4 +227,27 @@ footer {
         padding: 20px;
         margin: 0;
     }
+
+    .footer__rights-tabl {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color: #7A7A7A;
+        padding: 20px;
+        margin: 0;
+    }
+/*
+    @media screen and (max-width: 767px) {
+        .footer__rights-tabl {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        .footer__rights {
+            display: none;
+        }
+
+    }  */
 }
