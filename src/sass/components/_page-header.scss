@@ -20,15 +20,17 @@
     width: 40px;
     height: auto;
     top: -10;
-    left: 0;
+    left: 16;
     z-index: 16;
 
     @media screen and (min-width: $tablet) {
             width: 48px;
+            left: 30;
             }
     @media screen and (min-width: $desctop) {
               width: 60px;
               top: -23;
+              left: 16;
              }
 }
 .list {
@@ -81,10 +83,25 @@
         border: none;
         justify-content: center;
         align-items: center;
+        outline: none;
         font-weight: 600;
         font-size: 14px;
         line-height: calc(17 / 14);
         cursor: pointer;
+
+        transition: background-color 250ms var(--timing-function),
+        color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
+
+        &:hover {
+            background-color: #0A8817;
+        }
+
+        &:focus {
+            background-color: #0A8817;
+            color: #FFFFFF;
+            fill: #FFFFFF;
+        }
         
     }
 }

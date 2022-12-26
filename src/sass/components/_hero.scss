@@ -7,13 +7,15 @@
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 236px;
-  padding-top: 14px;
+  padding-top: 47px;
   @media screen and (min-width: $tablet) {
     background-image: url(/src/images/header/dots-m@1x.png);
+    padding-top: 13px;
     padding-bottom:12px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(/src/images/header/dots-l@1x.png);
+    padding-top: 41px;
     padding-bottom: 65px;
   }
 }
@@ -49,38 +51,75 @@
 }
 
 .hero-section__button {
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
   @extend %button-default;
   height: 38px;
   width: 109px;
+  outline: none;
+  border: none;
+
   @media screen and (min-width: 1200px) {
     width: 134px;
     height: 42px;
   }
 }
+
 .hero-section__button-link {
+  padding: 11px 26px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  
   font-weight: 600;
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
   text-decoration: none;
-  padding: 11px 26px;
+  outline: none;
+  
+  color: var(--primary-text-color);
+  
+  transition: border-color 250ms var(--timing-function),
+  color 250ms var(--timing-function);
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(18px / 14px);
     padding: 11px 34px;
   }
-}
 
-.hero-section__link {
-  color: #f8d24e;
+  &:hover {
+    color: var(--primary-text-color);
+    border-color: #0A8817;
+  }
+
+  &:focus {
+    color: var(--secondary-text-color);
+  }
+
 }
 
 .hero-section__secondbtn {
   @extend %button-row;
+  outline: none;
 }
+
+.hero-section__link {
+  color: var(--accent-color);
+  outline: none;
+  transition: color 250ms var(--timing-function);
+
+  &:hover {
+    color: #0A8817;
+  }
+
+  &:focus {
+    color: var(--secondary-text-color);
+    outline: none;
+  }
+}
+
+// .hero-section__button-link {
+  
+// }
 .hero-section__picture {
   position: absolute;
   left: 53%;
@@ -156,13 +195,25 @@
 }
 }
 
-.hero-arrow {
-  fill: #fcfcfc;
-}
 .hero-section__arrow {
   background-color: transparent;
+  fill: #FFFFFF;
   border: none;
+  cursor: pointer;
+  outline: none;
+
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: #0A8817;
+  }
 }
+
+.hero-arrow {
+  fill: inherit;
+}
+
 .hero-section__text {
   width: 200px;
   font-size: 12px;
