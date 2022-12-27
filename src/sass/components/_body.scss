@@ -10,12 +10,16 @@
     }
     
   body::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     }
     
   body::-webkit-scrollbar-thumb {
       background-color: #718a66;
       outline: 1px solid slategrey;
+    }
+
+    body.no-scroll {
+      overflow:hidden
     }
     
   *,
@@ -47,6 +51,27 @@ a{
     pointer;
 }
 
+@keyframes bounce {
+
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .go-top {
   position: fixed;
   z-index: 0;
@@ -57,6 +82,8 @@ a{
 
   &:hover {
     fill: rgba($color: #0d8f34, $alpha: 1.0);
+    animation: bounce 1200ms;
+    animation-iteration-count: infinite;
   }
 
   @media screen and (max-width: 1199px) {

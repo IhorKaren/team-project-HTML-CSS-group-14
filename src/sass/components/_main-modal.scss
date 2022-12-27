@@ -259,6 +259,7 @@
   width: 100%;
   min-width: 224px;
   height: 32px;
+  outline: none;
   margin-bottom: 12px;
   padding: 8px 12px;
   background: rgba(248, 210, 78, 0.1);
@@ -268,13 +269,17 @@
   font-size: 12px;
   line-height: 140%;
   color: var(--primary-text-color);
-  transition: border-color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
   @media screen and (min-width: $tablet) {
     max-width: 368px;
     height: 42px;
     margin-bottom: 16px;
     font-size: 14px;
     padding: 11px 16px;
+  }
+
+  &:focus-within {
+    border: 1px solid #f7d24e;
   }
 }
 

@@ -1,6 +1,6 @@
 .header {
-  background-color: transparent;
-  padding-top: 12px;
+   background-color: transparent;
+    padding-top: 40px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 24px;
@@ -150,13 +150,14 @@
 // }
 
 .mobile-menu-button {
-  position: absolute;
-  top: 13;
-  right: 32;
-  width: 32px;
-  height: 32px;
-  border: none;
-  background-color: transparent;
+    position: absolute;
+    top: 43;
+    right: 32;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color:transparent;
+
 
   @media screen and (min-width: $tablet) {
     top: 30;
@@ -164,34 +165,35 @@
   }
 }
 .mobile__navigation {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 76px;
-  margin-bottom: 122px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 110px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 170px;
+    }
 }
 .navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .navigation__link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: calc(39 / 32);
-  color: var(--modal-bg-color);
-  text-decoration: none;
-  @media screen and (min-width: $tablet) {
-    font-size: 48px;
-    line-height: calc(59 / 48);
-  }
-  &:focus {
-    color: var(--primary-text-color);
-  }
-}
-.mobile-order {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 64px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    color: var(--modal-bg-color);
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
+    &:focus,
+    &:hover {
+        color: var(--primary-text-color);
+    }
 }
 .mob-order {
   width: 152px;

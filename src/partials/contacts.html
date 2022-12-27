@@ -1,6 +1,7 @@
-<section class="contacts" id="contact">
+<section class="contacts">
+  <div class="container">
   <h2 class="visually-hidden">contacts</h2>
-  <ul class="contacts__lists">
+  <ul class="contacts__lists"  id="contact">
     <li class="contacts__list">
       <div class="contacts__block">
         <div class="contacts__thumb contacts__thumb--size">
@@ -18,10 +19,10 @@
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
       </div>
       <address class="contacts__block">
-        <a class="contacts__address" href="tel:+610383766284"
+        <a class="contacts__address" rel="noreferrer noopener" href="tel:+610383766284"
           >+61(0) 383 766 284</a
         >
-        <a class="contacts__address" href="mailto:noreply@envato.com"
+        <a class="contacts__address" rel="noreferrer noopener" href="mailto:noreply@envato.com"
           >noreply@envato.com</a
         >
       </address>
@@ -44,10 +45,10 @@
       </div>
 
       <address class="contacts__block">
-        <a class="contacts__address" href="tel:+610383766284"
+        <a class="contacts__address" rel="noreferrer noopener" href="tel:+610383766284"
           >+61(0) 383 766 284</a
         >
-        <a class="contacts__address" href="mailto:noreply@envato.com"
+        <a class="contacts__address" rel="noreferrer noopener" href="mailto:noreply@envato.com"
           >noreply@envato.com</a
         >
       </address>
@@ -69,10 +70,10 @@
         <p class="contacts__time">08:00 AM - 16:00 PM</p>
       </div>
       <address class="contacts__block">
-        <a class="contacts__address" href="tel:+610383766284"
+        <a class="contacts__address" rel="noreferrer noopener" href="tel:+610383766284"
           >+61(0) 383 766 284</a
         >
-        <a class="contacts__address" href="mailto:noreply@envato.com"
+        <a class="contacts__address" rel="noreferrer noopener" href="mailto:noreply@envato.com"
           >noreply@envato.com</a
         >
       </address>
@@ -81,7 +82,6 @@
   <div class="contacts__btn">
     <button
       class="contacts-btn__large large js-open-modal"
-      onclick="disableScroll()"
       data-modal="map"
       type="button"
     >
@@ -92,7 +92,6 @@
     </button>
     <button
       class="contacts-btn__transparent transparent js-open-modal"
-      onclick="disableScroll()"
       data-modal="fran"
       type="button"
     >
@@ -102,20 +101,25 @@
       </svg>
     </button>
   </div>
+</div>
 </section>
 <script>
-  function disableScroll() {
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+function disableScroll() {
+  // Get the current page scroll position
+  scrollTop =
+  window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft =
+  window.pageXOffset || document.documentElement.scrollLeft,
+
       // if any scroll is attempted,
       // set this to the previous value
-      (window.onscroll = function () {
-        window.scrollTo(scrollLeft, scrollTop);
-      });
-  }
+      window.onscroll = function() {
+          window.scrollTo(scrollLeft, scrollTop);
+      };
+}
 
-  function enableScroll() {
-    window.onscroll = function () {};
-  }
+function enableScroll() {
+  window.onscroll = function() {};
+}
+
 </script>
