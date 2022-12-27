@@ -20,7 +20,7 @@
 
 .main-overlay {
   /* Скрываем подложку  */
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
 
   position: fixed;
@@ -31,9 +31,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
+overflow-y: scroll;
 }
 
 /* Стили для модальных окон */
+
+.main-modal__product-list {
+    @extend %list
+}
+
 
 .main-modal {
   opacity: 0;
@@ -45,7 +51,9 @@
 
   width: calc(100% - 30px);
   max-width: 450px;
+  max-height: 100%;
   padding: 28px;
+  overflow: scroll;
   @media screen and (min-width: $mobile) {
     min-width: 280px;
   }
@@ -64,9 +72,12 @@
     margin-top: 83px;
   }
   &__product-overlay__ice-cream {
-    background-color: var(--secondary-bg-color);
+   
     border: 2px solid #96af8c;
     box-shadow: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    .main-modal__check:checked + & {
+        background: #efd478;
+    }
   }
   &__product-overlay__ice-cofee {
     background: #efd478;
@@ -77,6 +88,7 @@
   &__product-overlay__milkshake {
     border: 2px solid #d6936d;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
   }
 
   &__product-photo {
@@ -165,7 +177,7 @@
   background-color: #fff;
   transition: 0.3s all;
 }
-.main-modal-position {
+.main-modal__product-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -200,7 +212,7 @@
 
 
 
-.checkbox-wrap {
+.main-modal__product-item {
   display: flex;
   text-align: center;
   align-items: center;
@@ -216,7 +228,17 @@
 //     visibility: visible;
 // }
 
+.main-modal__check:checked + .main-modal__product-overlay__ice-cream {
+    background-color: #AEC6A5;
+}
 
+.main-modal__check:checked + .main-modal__product-overlay__ice-cofee {
+    background-color: #EFD478;
+}
+
+.main-modal__check:checked + .main-modal__product-overlay__milkshake {
+    background-color: #D6936D;
+}
 
 .modal-title {
   margin-bottom: 20px;
@@ -254,7 +276,14 @@
   font-size: 12px;
   line-height: 140%;
   color: var(--primary-text-color);
-  transition: border-color var(--transition-func);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: #0A8817;
+        }
+
   @media screen and (min-width: $tablet) {
     max-width: 368px;
     height: 42px;
@@ -262,6 +291,10 @@
     font-size: 14px;
     padding: 11px 16px;
   }
+}
+
+.main-modal__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
 }
 
 .main-modal__input-textarea {

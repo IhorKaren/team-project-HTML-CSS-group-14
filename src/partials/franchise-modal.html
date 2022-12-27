@@ -26,16 +26,17 @@
         <form>
             <div class="main-modal__field">
                 <input type="text" name="user-name" class="main-modal__input" id="user-name" placeholder="Name"
-                    required>
+                    required minlength="3">
                 <label for="user-name" class="main-modal__input-label"></label>
             </div>
             <div class="main-modal__field">
                 <label for="user-tel" class="main-modal__input-label"></label>
-                <input type="tel" name="user-tel" class="main-modal__input" id="user-tel" placeholder="Phone" required>
+                <input type="tel" name="user-tel" class="main-modal__input" id="user-tel" placeholder="Phone" required minlength="19">
             </div>
             <div class="main-modal__field">
                 <label for="user-mail" class="main-modal__input-label"></label>
-                <input type="mail" name="user-mail" class="main-modal__input" id="user-mail" placeholder="Email" required>
+                <input type="mail" name="user-mail" class="main-modal__input" id="user-mail" placeholder="Email" 
+                required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
             </div>
             <div class="main-modal__field">
                 <label for="user-comments" class="main-modal__input-label"></label>
@@ -49,4 +50,20 @@
 
 <!-- Подложка под модальным окном -->
 <div class="franchise-overlay js-overlay-modal"></div>
+<script>
+    function disableScroll() {
+        // Get the current page scroll position
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+            // if any scroll is attempted,
+            // set this to the previous value
+            (window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            });
+    }
+
+    function enableScroll() {
+        window.onscroll = function () { };
+    }
+</script>
 
