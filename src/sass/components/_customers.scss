@@ -169,7 +169,9 @@
   border-radius: 50%;
   border: none;
   padding: 0;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   background-color: #d9d9d9;
   display: inline-block;
   transition: background-color 0.6s ease;
