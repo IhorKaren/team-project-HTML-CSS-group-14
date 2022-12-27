@@ -11,6 +11,9 @@
   z-index: 20;
   transition: 0.3s all;
 }
+input{
+  outline: none;
+}
 
 .product-modal {
   opacity: 0;
@@ -36,7 +39,13 @@
   border-radius: 10px;
   transition: 0.3s all;
 }
-
+input:invalid {
+	border-color: red;
+}
+input,
+input:valid {
+	border-color: #ccc;
+}
 .product-modal.active,
 .product-overlay.active {
   opacity: 1;
