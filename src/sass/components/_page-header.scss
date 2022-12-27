@@ -1,145 +1,139 @@
 .header {
-    background-color: transparent;
+   background-color: transparent;
     padding-top: 40px;
 
-    @media screen and (min-width: $tablet) {
-            padding-top: 24px;
-            }
-    @media screen and (min-width: $desctop) {
-              padding-top: 40px;
-             }
-    
+  @media screen and (min-width: $tablet) {
+    padding-top: 24px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 40px;
+  }
 }
 .header__container {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .logo {
-    position: absolute;
-    width: 40px;
-    height: auto;
-    top: -10;
-    left: 16;
-    z-index: 16;
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: -10;
+  left: 16;
+  z-index: 16;
 
-    @media screen and (min-width: $tablet) {
-            width: 48px;
-            left: 30;
-            }
-    @media screen and (min-width: $desctop) {
-              width: 60px;
-              top: -23;
-              left: 16;
-             }
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    left: 30;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 60px;
+    top: -23;
+    left: 16;
+  }
 }
 .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .menu {
-    display: none;
-    margin-left: 308px;
-    @media screen and (min-width: $desctop) {
-        display: flex;
-        gap: 28px;
-        justify-content: center;
-        align-items: center;
-    }
+  display: none;
+  margin-left: 308px;
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .menu__link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 13px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 13px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .tablet-button {
-    display: flex;
-    gap: 32px;
-    margin-left: auto;
-    align-items: center;
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+  align-items: center;
 }
 .order {
-    display: none;
-    
-    @media screen and (min-width: $tablet) {
-        color: var(--primary-text-color);
-        background: var(--accent-color);
-        display: flex;
-        width: 152px;
-        height: 42px;
-        border-radius: 10px;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: calc(17 / 14);
-        cursor:
-                url('/src/images/cursor-pointer.png'),
-                pointer;
+  display: none;
 
-        transition: background-color 250ms var(--timing-function),
-        color 250ms var(--timing-function),
-        fill 250ms var(--timing-function);
+  @media screen and (min-width: $tablet) {
+    color: var(--primary-text-color);
+    background: var(--accent-color);
+    display: flex;
+    width: 152px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    cursor: url('/src/images/cursor-pointer.png'), pointer;
 
-        &:hover {
-            background-color: #0A8817;
-        }
+    transition: background-color 250ms var(--timing-function),
+      color 250ms var(--timing-function), fill 250ms var(--timing-function);
 
-        &:focus {
-            background-color: #0A8817;
-            color: #FFFFFF;
-            fill: #FFFFFF;
-        }
-        
+    &:hover {
+      background-color: #0a8817;
     }
+
+    &:focus {
+      background-color: #0a8817;
+      color: #ffffff;
+      fill: #ffffff;
+    }
+  }
 }
 .mobile-button {
-    position: relative;
-    display: block;
-        width: 32px;
-        height: 32px;
-        border: none;
-            z-index: 5;
-        background-color: transparent;
-        
-    @media screen and (min-width: $desctop) {
-    display: none;   
-    }
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  z-index: 5;
+  background-color: transparent;
+
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
 }
 .mobile-menu {
-    position: fixed;
-    z-index: 15;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--primary-bg-color);
-        @media screen and (min-width:$desctop) {
-           display: none; 
-        }
-    }
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
 .is-hidden {
-    transition: 0.5s;
-    transform: translateX(100%);
+  transition: 0.5s;
+  transform: translateX(100%);
 }
-.is-active{
-    transition: 0.5s;
-    transform: translateX(0%);
+.is-active {
+  transition: 0.5s;
+  transform: translateX(0%);
 }
-
 
 // .mobile-logo {
 //     width: 40px;
@@ -164,10 +158,11 @@
     border: none;
     background-color:transparent;
 
-    @media screen and (min-width: $tablet) {
-        top: 30;
-        right: 40;
-    }
+
+  @media screen and (min-width: $tablet) {
+    top: 30;
+    right: 40;
+  }
 }
 .mobile__navigation {
     display: flex;
@@ -179,12 +174,12 @@
     @media screen and (min-width: $tablet) {
         padding-top: 170px;
     }
-           
 }
 .navigation__item:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .navigation__link {
+
     font-weight: 700;
     font-size: 32px;
     line-height: calc(39 / 32);
@@ -200,26 +195,20 @@
         color: var(--primary-text-color);
     }
 }
-.mobile-order{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 64px;
-    }
 .mob-order {
-        width: 152px;
-            height: 42px;
-            background: var(--accent-color);
-            border-radius: 10px;
-            border: none;
-            justify-content: center;
-            align-items: center;
-        
-            font-weight: 600;
-            font-size: 14px;
-            line-height: calc(17 / 14);
-            color: var(--primary-text-color);
-            @media screen and (min-width: $tablet){
-            display: none
-              }
+  width: 152px;
+  height: 42px;
+  background: var(--accent-color);
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--primary-text-color);
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }

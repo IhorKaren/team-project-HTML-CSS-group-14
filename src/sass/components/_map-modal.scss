@@ -56,9 +56,7 @@
   top: 20px;
   right: 20px;
   fill: #444;
-    cursor:
-        url('/src/images/cursor-pointer.png'),
-        pointer;
+  cursor: url('/src/images/cursor-pointer.png'), pointer;
 }
 
 .map-modal__title {
@@ -92,26 +90,24 @@
   border-radius: 10px;
   font-weight: 600;
   border-style: none;
-    cursor:
-        url('/src/images/cursor-pointer.png'),
-        pointer;
+  cursor: url('/src/images/cursor-pointer.png'), pointer;
   outline: none;
   margin-top: 24px;
-  @media screen and (min-width: 1200px) {
-    margin-top: 32px;
-  }
-  .map-modal__link {
-    font-size: 12px;
-    line-height: calc(15px / 12px);
-    color: #131313;
-    text-decoration: none;
-  }
-
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  color: #131313;
+  text-decoration: none;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), fill 250ms var(--timing-function);
   &:hover {
     background: #0a8817;
+    color: #ffffff;
   }
   &:focus {
     background: #0a8817;
     color: #ffffff;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
   }
 }
