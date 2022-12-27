@@ -181,6 +181,10 @@
   padding-left: 10px;
   margin-bottom: 16px;
   outline: none;
+
+  &:focus-within {
+    border: 1px solid #f7d24e;
+  }
 }
 .product-form__name {
   position: absolute;
