@@ -57,11 +57,14 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
       </div>
-       <input
-      type="text"
-      class="product-form__input product-form__input--comment"
-      placeholder="Comment"
-    />
+        <div class="main-modal__field">
+      <label for="user-comments" class="main-modal__input-label"></label>
+      <textarea
+        name="user-comments"
+        id="user-comments"
+        class="main-modal__input main-modal__input-textarea"
+        placeholder="Comment"
+      ></textarea>
       <button type="submit" class="main-modal-form__btn">Submit</button>
     </div>
 

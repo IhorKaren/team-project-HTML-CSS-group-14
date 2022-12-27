@@ -21,13 +21,13 @@
     <div class="main-modal-position">
       <div class="checkbox-wrap">
         <label for="ice-cream" class="main-modal__check-text">
-        <input
-          type="checkbox"
-          name="product"
-          id="ice-cream"
-          value="ice-cream"
-          class="main-modal__check main-modal__check--green"
-        />
+          <input
+            type="checkbox"
+            name="product"
+            id="ice-cream"
+            value="ice-cream"
+            class="main-modal__check main-modal__check--green"
+          />
           <div
             class="main-modal__product-overlay main-modal__product-overlay__ice-cream"
           >
@@ -59,52 +59,52 @@
 
       <div class="checkbox-wrap">
         <label for="ice-coffee" class="main-modal__check-text">
-        <input
-          type="checkbox"
-          name="product"
-          id="ice-coffee"
-          value="ice-cofee"
-          class="main-modal__check main-modal__check--yellow"
-        />
-        <div
-        class="main-modal__product-overlay main-modal__product-overlay__ice-cofee"
-      >
-        <div
-          class="main-modal__product-photo main-modal__product-photo__ice-cofee"
-        >
-          <div class="main-modal__product main-modal__product__ice-cofee">
-            <picture>
-              <source
-                srcset="
-                  ./images/modal/product-2@1x.jpg 1x,
-                  ./images/modal/product-2@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                class="main-modal__picture"
-                src="./images/modal/product-2@1x.jpg"
-                width="132"
-                alt="ice-cofee"
-              />
-            </picture>
+          <input
+            type="checkbox"
+            name="product"
+            id="ice-coffee"
+            value="ice-cofee"
+            class="main-modal__check main-modal__check--yellow"
+          />
+          <div
+            class="main-modal__product-overlay main-modal__product-overlay__ice-cofee"
+          >
+            <div
+              class="main-modal__product-photo main-modal__product-photo__ice-cofee"
+            >
+              <div class="main-modal__product main-modal__product__ice-cofee">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/modal/product-2@1x.jpg 1x,
+                      ./images/modal/product-2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="main-modal__picture"
+                    src="./images/modal/product-2@1x.jpg"
+                    width="132"
+                    alt="ice-cofee"
+                  />
+                </picture>
+              </div>
+            </div>
+            <p class="main-modal__product-text">ice coffee</p>
           </div>
-        </div>
-        <p class="main-modal__product-text">ice coffee</p>
-      </div>
         </label>
       </div>
 
       <div class="checkbox-wrap">
         <label for="milkshake" class="main-modal__check-text">
-        <input
-          type="checkbox"
-          name="product"
-          id="milkshake"
-          value="milkshake"
-          class="main-modal__check main-modal__check--brown"
-        />
-        <div
+          <input
+            type="checkbox"
+            name="product"
+            id="milkshake"
+            value="milkshake"
+            class="main-modal__check main-modal__check--brown"
+          />
+          <div
             class="main-modal__product-overlay main-modal__product-overlay__milkshake"
           >
             <div
@@ -130,7 +130,6 @@
             </div>
             <p class="main-modal__product-text">milkshake</p>
           </div>
-          
         </label>
       </div>
     </div>
@@ -141,7 +140,8 @@
         class="main-modal__input"
         id="user-name"
         placeholder="Name"
-        required
+        pattern="^[A-Za-z]{3,15}$"
+        title="Username should start with uppercase letter and not contain digits, spaces."
       />
       <label for="user-name" class="main-modal__input-label"></label>
     </div>
@@ -153,7 +153,7 @@
         class="main-modal__input"
         id="user-tel"
         placeholder="Phone"
-        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
       />
     </div>
     <div class="main-modal__field">

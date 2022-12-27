@@ -98,7 +98,6 @@
       placeholder="Name"
       pattern="^[A-Za-z]{3,15}$"
       title="Username should start with uppercase letter and not contain digits, spaces."
-      
     />
 
     <input
@@ -107,14 +106,14 @@
       id="phone-validation"
       placeholder="Phone"
       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-      
     />
 
-    <input
-      type="text"
-      class="product-form__input product-form__input--comment"
-      placeholder="Comment"
-    />
+    <textarea
+      name="comments"
+      class="comments-textarea product-form__input"
+      placeholder="Comments"
+      
+    ></textarea>
     <button type="submit" class="product-form__btn">Submit</button>
   </form>
 </div>
