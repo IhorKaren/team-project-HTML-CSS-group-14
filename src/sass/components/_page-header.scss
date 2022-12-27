@@ -3,7 +3,7 @@
     padding-top: 12px;
 
     @media screen and (min-width: $tablet) {
-            padding-top: 20px;
+            padding-top: 24px;
             }
     @media screen and (min-width: $desctop) {
               padding-top: 40px;
@@ -106,10 +106,12 @@
     }
 }
 .mobile-button {
+    position: relative;
     display: block;
         width: 32px;
         height: 32px;
         border: none;
+            z-index: 5;
         background-color: transparent;
         
     @media screen and (min-width: $desctop) {
@@ -152,16 +154,18 @@
 // }
 
 .mobile-menu-button {
-    display: block;
+    position: absolute;
+    top: 13;
+    right: 32;
     width: 32px;
     height: 32px;
-    margin-top: 10px;
-    margin-left: auto;
     border: none;
     background-color:transparent;
-    position: absolute;
-    top: 16px;
-    right: 20px;
+
+    @media screen and (min-width: $tablet) {
+        top: 30;
+        right: 40;
+    }
 }
 .mobile__navigation {
     display: flex;
