@@ -1,4 +1,16 @@
-<section class="container customers">
+<section class="customers">
+  <div class="container">
+  <h2 class="customers__title">Gallery Ice cream</h2>
+    <div class="gallery">
+        <picture class="gallery__picture">
+          <source srcset="./images/slider/slider-1-l@1x.jpg 1x, ./images/slider/slider-1-l@2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="./images/slider/slider-1-m@1x.jpg 1x, ./images/slider/slider-1-m@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/slider/slider-1-s@1x.jpg 1x, ./images/slider/slider-1-s@2x.jpg 2x" media="(max-width: 767px)">
+            
+            
+             <img class="gallery__photo" src="./images/slider/slider-1-s@1x.jpg" alt="Ice Cream">
+        </picture> 
+      </div>    
     <div class="slider" id="slider">
   <div class="mySlides fade">
    <div class="swiper-slide__avatar">
@@ -53,6 +65,7 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 </div>
 </div>
 </section>
