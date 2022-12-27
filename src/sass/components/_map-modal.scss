@@ -56,7 +56,9 @@
   top: 20px;
   right: 20px;
   fill: #444;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
 }
 
 .map-modal__title {
@@ -90,7 +92,9 @@
   border-radius: 10px;
   font-weight: 600;
   border-style: none;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   outline: none;
   margin-top: 24px;
   @media screen and (min-width: 1200px) {

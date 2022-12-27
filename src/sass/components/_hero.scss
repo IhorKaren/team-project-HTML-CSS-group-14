@@ -217,7 +217,9 @@
   background-color: transparent;
   fill: #FFFFFF;
   border: none;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   outline: none;
 
   transition: fill 250ms var(--timing-function);

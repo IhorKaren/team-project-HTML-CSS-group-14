@@ -11,7 +11,9 @@
 
     padding: 11px 26px 11px 26px;
     border-radius: 10px;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     background-color: transparent;
 
@@ -34,7 +36,9 @@
 
     padding: 12px 34px 12px 34px;
     border-radius: 10px;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     font-weight: 600;
     font-size: 14px;
@@ -47,7 +51,9 @@
     justify-content: center;
 
     border: none;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     background-color: transparent;
 
@@ -69,7 +75,9 @@
 
     padding: 12px 40px 12px 40px;
     border-radius: 10px;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     font-weight: 600;
     font-size: 14px;
@@ -83,7 +91,9 @@
 
     padding: 12px 55px 12px 55px;
     border-radius: 10px;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     background-color: transparent;
 
@@ -99,7 +109,9 @@
 
     padding: 12px 36px 12px 36px;
     border-radius: 10px;
-    cursor: pointer;
+      cursor:
+          url('/src/images/cursor-pointer.png'),
+          pointer;
 
     font-weight: 600;
     font-size: 14px;

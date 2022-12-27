@@ -52,7 +52,9 @@
   top: 20px;
   right: 20px;
   fill: #444;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
 }
 
 .product-modal__title {
@@ -205,7 +207,9 @@
   line-height: calc(17px / 14px);
   color: #131313;
   border-style: none;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   outline: none;
   &:hover {
     background: #0a8817;

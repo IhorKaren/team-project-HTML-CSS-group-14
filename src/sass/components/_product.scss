@@ -303,7 +303,9 @@
   color: #131313;
   padding: 0;
   bottom: 16px;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   left: 50%;
   margin-bottom: 0;
   transform: translate(-50%);

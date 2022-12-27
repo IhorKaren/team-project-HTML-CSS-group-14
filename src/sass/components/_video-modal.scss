@@ -53,7 +53,9 @@
   top: 20px;
   right: 20px;
   fill: #444;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
 }
 
 .video-modal__title {

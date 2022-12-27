@@ -196,7 +196,9 @@
   top: 20px;
   right: 20px;
   fill: #444;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
 }
 
 
@@ -285,7 +287,9 @@
   line-height: calc(15 / 12);
   color: #131313;
   border-style: none;
-  cursor: pointer;
+    cursor:
+        url('/src/images/cursor-pointer.png'),
+        pointer;
   outline: none;
   @media screen and (min-width: $tablet) {
     min-width: 121px;
