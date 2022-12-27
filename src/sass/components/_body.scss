@@ -46,3 +46,16 @@ a{
     url('/src/images/cursor-pointer.png'),
     pointer;
 }
+
+.go-top {
+  position: fixed;
+  z-index: 0;
+  bottom: 15px;
+  right: 25px;
+  fill: rgba($color: #000000, $alpha: 0.5);
+  transition: fill 250ms var(--timing-function);
+
+  &:hover {
+    fill: rgba($color: #0d8f34, $alpha: 1.0);
+  }
+}

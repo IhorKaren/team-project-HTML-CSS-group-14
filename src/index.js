@@ -1,3 +1,4 @@
+import './js/anchor';
 import './js/burger';
 import './js/slider';
 import './js/product-modal';
