@@ -58,4 +58,8 @@ a{
   &:hover {
     fill: rgba($color: #0d8f34, $alpha: 1.0);
   }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
