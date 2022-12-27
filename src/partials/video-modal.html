@@ -5,6 +5,7 @@
     class="video-modal__cross js-modal-close"
     width="30"
     height="30"
+    onclick="enableScroll()"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
   >
@@ -30,3 +31,22 @@
 </div>
 
 <div class="video-overlay js-overlay-modal"></div>
+        <script>
+        function disableScroll() {
+            // Get the current page scroll position
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft,
+          
+                // if any scroll is attempted,
+                // set this to the previous value
+                window.onscroll = function() {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+          
+        function enableScroll() {
+            window.onscroll = function() {};
+        }
+    </script>

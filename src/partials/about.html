@@ -29,7 +29,12 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="about_button about-button read open-modal js-open-modal" data-modal="video">
+        <button
+          type="button"
+          onclick="disableScroll()"
+          class="about_button about-button read open-modal js-open-modal"
+          data-modal="video"
+        >
           Read more
           <svg class="about-button_icon" width="12" height="12">
             <use href="./images/sprite.svg#icon-buy-now-arrow"></use>
@@ -39,3 +44,19 @@
     </div>
   </div>
 </section>
+<script>
+  function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+      // if any scroll is attempted,
+      // set this to the previous value
+      (window.onscroll = function () {
+        window.scrollTo(scrollLeft, scrollTop);
+      });
+  }
+
+  function enableScroll() {
+    window.onscroll = function () {};
+  }
+</script>

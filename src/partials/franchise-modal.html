@@ -7,6 +7,7 @@
    <!--   Svg иконка для закрытия окна  -->
    <svg
     class="franchise-modal__cross js-modal-close"
+    onclick="enableScroll()"
     width="30"
     height="30"
     xmlns="http://www.w3.org/2000/svg"
@@ -49,4 +50,21 @@
 
 <!-- Подложка под модальным окном -->
 <div class="franchise-overlay js-overlay-modal"></div>
+
+<script>
+  function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+      // if any scroll is attempted,
+      // set this to the previous value
+      (window.onscroll = function () {
+        window.scrollTo(scrollLeft, scrollTop);
+      });
+  }
+
+  function enableScroll() {
+    window.onscroll = function () {};
+  }
+</script>
 
