@@ -42,7 +42,7 @@
 
   /*  Установаем ширину окна  */
   min-width: 280px;
-  height: 100%;
+  max-height: 100%;
 
   width: calc(100% - 30px);
   max-width: 450px;
