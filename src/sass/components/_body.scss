@@ -17,6 +17,10 @@
       background-color: #718a66;
       outline: 1px solid slategrey;
     }
+
+    body.no-scroll {
+      overflow:hidden
+    }
     
   *,
   *::before,

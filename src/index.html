@@ -83,7 +83,7 @@
     <script type="module" src="./index.js"></script>
   </head>
 
-  <body>
+  <body data-no-scroll>
     <div id="snowflakes-container">
       <include src="./partials/lights.html"></include>
       <include src="./partials/page-header.html"></include>
@@ -130,4 +130,11 @@
       autoResize: true, // Default: true
     });
   </script>
+  <script>
+    $('.mobile-button').on('click', function(){ $('body').toggleClass('no-scroll');
+    });
+    
+    $('.mobile-menu-button').on('click', function(){ $('body').removeClass('no-scroll');
+    });
+    </script>
 </html>

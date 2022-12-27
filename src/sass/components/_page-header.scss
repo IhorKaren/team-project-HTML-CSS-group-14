@@ -1,6 +1,6 @@
 .header {
     background-color: transparent;
-    padding-top: 12px;
+    padding-top: 40px;
 
     @media screen and (min-width: $tablet) {
             padding-top: 24px;
@@ -157,7 +157,7 @@
 
 .mobile-menu-button {
     position: absolute;
-    top: 13;
+    top: 43;
     right: 32;
     width: 32px;
     height: 32px;
@@ -173,8 +173,12 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 76px;
-    margin-bottom: 122px;
+    padding-top: 120px;
+    margin-bottom: 110px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 170px;
+    }
            
 }
 .navigation__item:not(:last-child) {
@@ -186,11 +190,13 @@
     line-height: calc(39 / 32);
     color: var(--modal-bg-color);
     text-decoration: none;
+    transition: color 250ms var(--timing-function);
     @media screen and (min-width: $tablet) {
         font-size: 48px;
         line-height: calc(59 / 48);
     }
-    &:focus {
+    &:focus,
+    &:hover {
         color: var(--primary-text-color);
     }
 }
