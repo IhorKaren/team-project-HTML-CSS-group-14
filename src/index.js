@@ -7,3 +7,4 @@ import './js/map-modal';
 import './js/video-modal';
 import './js/main-modal';
 import './js/franchise-modal';
+import './js/body-noscroll';
