@@ -7,7 +7,10 @@
   max-height: 100%;
   width: calc(100% - 30px);
   max-width: 450px;
-  @media screen and (min-width: $mobile) {
+border-radius: 10px;
+    border: 2px solid #f8d24e;
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+    overflow: scroll;  @media screen and (min-width: $mobile) {
     min-width: 280px;
   }
 
