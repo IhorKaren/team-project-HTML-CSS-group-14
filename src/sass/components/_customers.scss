@@ -81,8 +81,15 @@
 .gallery__photo {
   border-radius: 8px;
   margin: 0;
+
+  @media screen and (min-width: $tablet) {
+    border-radius: 18px;
 }
 
+@media screen and (min-width: $desctop) {
+  border-radius: 24px;; 
+}
+}
 
 .mySlides {
   display: none;
